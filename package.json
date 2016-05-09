@@ -1,0 +1,34 @@
+{
+  "name": "time-quote",
+  "version": "1.0.0",
+  "description": "Its a simple chrome tab extension, shows time, date and your lovely quote when when ever you open new tab.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/narendrakurapati/time-quote.git"
+  },
+  "keywords": [
+    "Chrome",
+    "extension",
+    "time",
+    "quote"
+  ],
+  "author": "Narendra Kurapati",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/narendrakurapati/time-quote/issues"
+  },
+  "homepage": "https://github.com/narendrakurapati/time-quote#readme",
+  "devDependencies": {
+    "angular": "^1.5.5",
+    "bootstrap": "^3.3.6",
+    "browser-sync": "^2.12.5",
+    "browserify": "^13.0.1",
+    "gulp": "^3.9.1",
+    "gulp-live-server": "0.0.29",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

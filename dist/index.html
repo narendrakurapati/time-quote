@@ -1,0 +1,29 @@
+<!doctype html>
+<html data-ng-app="time-quote" data-ng-csp="">
+  <head>
+    <meta charset="UTF-8">
+    <title>Time & Quote</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="container">
+    	<div ng-controller="appController">
+    		<div id="datetime">
+    			<h1>{{ data.date | date:'hh:mm:ss' }}</h1>
+    			<h2>{{ data.date | date:'EEEE, MMMM yyyy' }}</h2>
+    			<div ng-if="data.quote && !edit">
+    				<h3>{{ data.quote }}</h3> <label ng-click="editQuote()">&#9998;</label>
+    			</div>
+    			<button ng-if="!data.quote && !edit" ng-click="editQuote()">Add Quote</button>
+    		</div>
+    		<form novalidate name="quote" ng-submit="updateQuote($event)" ng-if="edit">
+    			<textarea placeholder="Enter your lovely quote" ng-model="data.newQuote"></textarea>
+    			<button>cancel</button>
+    			<button type="submit">submit</button>
+    		</form>
+    	</div>
+    </div>
+    <script src="./bundle.js"></script>
+  </body>
+</html>
